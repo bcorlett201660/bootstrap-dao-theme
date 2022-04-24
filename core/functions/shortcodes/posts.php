@@ -22,7 +22,7 @@ function aff_posts_shortcode( $atts = [], $content = null) {
 		 $title=$item['title']['rendered'];
 		$excerpt=$item['excerpt']['rendered'];
 		$media_id = $item['featured_media'];
-		$image_url = do_shortcode('[aff_media_url media_id="'.$media_id.'"]');
+		$image_url = do_shortcode('[dao_media_url media_id="'.$media_id.'"]');
 		$content .= '<div class="card mb-3">';
 		if($image_url){  
 		$content .= '<img class="card-img-top" src="'.$image_url.'" alt="">';

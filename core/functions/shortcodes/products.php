@@ -46,7 +46,7 @@ function aff_products_shortcode( $atts = [], $content = null, $tag = '' ) {
 		$content .= '<div class="card mt-3">';
 		$content .= '<a class="" href="'.$learn_url.'" role="button"><img class="card-img-top p-1" src="'.$image_1_url.'" alt="" /></a>';
 		$content .= '<div class="card-body"><a class="" href="'.$learn_url.'" role="button"><h5 class="card-title">' .   $title . '</h5></a>';
-		$content .= '    <p class="card-text"><small class="text-muted">by '.do_shortcode('[aff_manufacturer_name manufacturer_id="'.$manufacturer_id.'"]').'</small></p>';
+		$content .= '    <p class="card-text"><small class="text-muted">by '.do_shortcode('[dao_manufacturer_name manufacturer_id="'.$manufacturer_id.'"]').'</small></p>';
 		$content .='<p class="font-weight-bold">'.$price .'</p>';
 		$content .= '<a class="btn btn-warning btn-block" href="'.$learn_url.'" role="button">Learn More</a>';
 		$content .= '<a class="btn btn-danger btn-block" href="javascriptVoid(0);" role="button"  data-toggle="modal" data-target="#'.$modal_id.'">Buy Now</a>';

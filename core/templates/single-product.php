@@ -77,11 +77,11 @@ if (strpos($video_4_url,'https://youtu.be') !== false) {
   $video_4_url = 'https://www.youtube.com/embed/' . $video_4_url_components_parts[1];
 }
 $brand_id= $product['brand']['0'];
-$brand_name = do_shortcode('[aff_brand_name brand_id="'.$brand_id.'"]');
-$brand_link = do_shortcode('[aff_brand_link brand_id="'.$brand_id.'"]');
+$brand_name = do_shortcode('[dao_brand_name brand_id="'.$brand_id.'"]');
+$brand_link = do_shortcode('[dao_brand_link brand_id="'.$brand_id.'"]');
 
 $manufacturer_id= $product['manufacturer']['0'];
-$manufacturer_name = do_shortcode('[aff_manufacturer_name manufacturer_id="'.$manufacturer_id.'"]');
+$manufacturer_name = do_shortcode('[dao_manufacturer_name manufacturer_id="'.$manufacturer_id.'"]');
 
 $image_1_id = $product['acf']['image_1'];
 $image_2_id = $product['acf']['image_2'];
@@ -94,9 +94,9 @@ $image_8_id = $product['acf']['image_8'];
 $image_9_id = $product['acf']['image_9'];
 $image_10_id = $product['acf']['image_10'];
  
-$product_carousel = do_shortcode('[aff_product_carousel image_1_id="'.$image_1_id.'" image_2_id="'.$image_2_id.'" image_3_id="'.$image_3_id.'" image_4_id="'.$image_4_id.'" image_5_id="'.$image_5_id.'" image_6_id="'.$image_6_id.'" image_7_id="'.$image_7_id.'" image_8_id="'.$image_8_id.'" image_9_id="'.$image_9_id.'" image_10_id="'.$image_10_id.'"]');
+$product_carousel = do_shortcode('[dao_product_carousel image_1_id="'.$image_1_id.'" image_2_id="'.$image_2_id.'" image_3_id="'.$image_3_id.'" image_4_id="'.$image_4_id.'" image_5_id="'.$image_5_id.'" image_6_id="'.$image_6_id.'" image_7_id="'.$image_7_id.'" image_8_id="'.$image_8_id.'" image_9_id="'.$image_9_id.'" image_10_id="'.$image_10_id.'"]');
 
-$related_products = do_shortcode('[aff_products taxonomy_slug="manufacturer" taxonomy_id="'.$manufacturer_id.'"]');
+$related_products = do_shortcode('[dao_products taxonomy_slug="manufacturer" taxonomy_id="'.$manufacturer_id.'"]');
 
 
  $content = '<div class="row m-0">';

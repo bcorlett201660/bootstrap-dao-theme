@@ -63,5 +63,6 @@
 	<?php
 		wp_footer();
 	?>
+	<script type="text/javascript" src="core/lib/js/javascripts.php"></script>
 </body>
 </html>

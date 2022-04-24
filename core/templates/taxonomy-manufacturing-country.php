@@ -26,7 +26,7 @@ $taxonomy_slug="manufacturing-country";
 
                     <?php 
                     if($taxonomy_id && $taxonomy_slug){
-                      echo do_shortcode('[aff_products taxonomy_slug="'.$taxonomy_slug.'" taxonomy_id="'.$taxonomy_id.'"]');
+                      echo do_shortcode('[dao_products taxonomy_slug="'.$taxonomy_slug.'" taxonomy_id="'.$taxonomy_id.'"]');
                     }
                     ?> 
                 </main>

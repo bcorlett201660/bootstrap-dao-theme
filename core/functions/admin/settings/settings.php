@@ -1,7 +1,7 @@
 <?php
 
     $themename = "bootstrap-dao";
-    $shortname = "aff";
+    $shortname = "dao";
 	
 	/* functions to andale the options array  */
 	
