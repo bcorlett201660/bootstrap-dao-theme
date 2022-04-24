@@ -501,3 +501,19 @@ function bootstrap_dao_theme_scripts_loader() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'bootstrap_dao_theme_scripts_loader' );
+
+
+//bootstrap-dao-theme custom functions
+
+// include .php from core/functions/*/*.php
+function require_all_files($dir) {
+    foreach( glob( "$dir/*" ) as $path ){
+        if ( preg_match( '/\.php$/', $path ) ) {
+            require_once $path;  // it's a PHP file so just require it
+        } elseif ( is_dir( $path ) ) {
+            require_all_files( $path );  // it's a subdir, so call the same function for this subdir
+        }
+    }
+}
+
+require_all_files( get_stylesheet_directory() . "/core/functions" );
